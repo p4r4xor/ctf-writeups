@@ -8,15 +8,15 @@ Participated in [picoCTF 2019](https://picoctf.com/).Was able to solve 94 proble
 
 | Task                   | points |
 |------------------------|--------|
-| [`2Warm`](General-Skills/General%20Warmup%201/)   | 50     |
-| [`Lets Warm Up`](General-Skills/General%20Warmup%202/)   | 50     |
-| [`Warmed Up`](General-Skills/General%20Warmup%203/)           | 50    |
-| [`Bases`](General-Skills/Resources/)           | 50    |
-| [`First Grep`](General-Skills/grep%201/)           | 75    |
-| [`Resources`](General-Skills/net%20cat/)           | 75    |
-| [`strings it`](General-Skills/strings/)           | 100    |
-| [`what's a net cat`](General-Skills/pipe/)           | 110    |
-| [`Based`](General-Skills/grep%202/)           | 125    |
+| [`2Warm`](General-Skills/2Warm/)   | 50     |
+| [`Lets Warm Up`](General-Skills/Lets%20Warm%20Up%203/)   | 50     |
+| [`Warmed Up`](General-Skills/Warmed%20Up%203/)           | 50    |
+| [`Bases`](General-Skills/Bases/)           | 50    |
+| [`First Grep`](General-Skills/First%20Grep%201/)           | 75    |
+| [`Resources`](General-Skills/Resources/)           | 75    |
+| [`strings it`](General-Skills/strings%20it%201/)           | 100    |
+| [`what's a net cat`](General-Skills/what's%20a%20net%20cat%201/)           | 110    |
+| [`Based`](General-Skills/Based/)           | 125    |
 | [`First Grep: Part II`](General-Skills/Aca-Shell-A/)           | 150    |
 | [`plumbing`](General-Skills/environ/)           | 150    |
 | [`whats-the-difference`](General-Skills/ssh-keyz/)           | 150    |
@@ -24,7 +24,6 @@ Participated in [picoCTF 2019](https://picoctf.com/).Was able to solve 94 proble
 | [`flag_shop`](General-Skills/you%20can’t%20see%20me/)| 200    |
 | [`mus1c`](General-Skills/absolutely%20relative/) | 250    |
 | [`1_wanna_b3_a_r0ck5tar`](General-Skills/in%20out%20error/)   | 275    |
-| [`store`](General-Skills/store/)           | 400    |
 
 
 *  __Reversing__
