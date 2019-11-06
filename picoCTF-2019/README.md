@@ -10,12 +10,12 @@ Participated in [picoCTF 2019](https://picoctf.com/).Was able to solve 94 proble
 |------------------------|--------|
 | [`2Warm`](General-Skills/2Warm/)   | 50     |
 | [`Lets Warm Up`](General-Skills/Lets%20Warm%20Up/)   | 50     |
-| [`Warmed Up`](General-Skills/Warmed%20Up/)           | 50    |
+| [`Warmed Up`](General-Skills/Warmed%20up/)           | 50    |
 | [`Bases`](General-Skills/Bases/)           | 50    |
 | [`First Grep`](General-Skills/First%20Grep/)           | 75    |
 | [`Resources`](General-Skills/Resources/)           | 75    |
-| [`strings it`](General-Skills/strings%20it/)           | 100    |
-| [`what's a net cat`](General-Skills/what's%20a%20net%20cat/)           | 110    |
+| [`strings it`](General-Skills/Strings%20it/)           | 100    |
+| [`what's a net cat?`](General-Skills/What's%20a%20Net%20Cat?/)           | 110    |
 | [`Based`](General-Skills/Based/)           | 125    |
 | [`First Grep: Part II`](General-Skills/First%20Grep:%20Part%20II/)           | 150    |
 | [`plumbing`](General-Skills/plumbing/)           | 150    |
