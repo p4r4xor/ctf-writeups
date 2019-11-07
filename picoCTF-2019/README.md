@@ -32,3 +32,30 @@
 | [`mus1c`](General-Skills/mus1c/) | 300    |
 | [`1_wanna_b3_a_r0ck5tar`](General-Skills/1_wanna_b3_a_r0ck5tar/)   | 350    |
 
+* __Forensics__
+
+| Task                                                       | points |
+|------------------------------------------------------------|--------|
+| [`Glory of the Garden`](Forensics/Glory-of-the-Garden/)      | 50    |
+| [`unzip`](Forensics/unzip/)      | 50    |
+| [`So Meta`](Forensics/So-Meta/)              | 150    |
+| [`What Lies Within`](Forensics/What-Lies_within/)              | 150    |
+| [`extensions`](Forensics/extensions/)              | 150    |
+| [`admin panel`](Forensics/admin%20panel/)              | 150    |
+| [`shark on wire 1`](Forensics/shark-on-wire-1/)           | 150    |
+| [`WhitePages`](Forensics/WhitePages/)              | 250    |
+| [`c0rrupt`](Forensics/c0rrupt/)              | 250    |
+| [`like1000`](Forensics/like1000/)              | 250    |
+| [`m00nwalk`](Forensics/m00nwalk/)              | 250    |
+| [`Investigative Reversing 0`](Forensics/Investigative-Reversing-0/)              | 300    |
+| [`shark on wire 2`](Forensics/shark-on-wire-2/)              | 300    |
+| [`Investigative Reversing 1`](Forensics/Investigative-Reversing-1/)              | 350    |
+| [`Investigative Reversing 2`](Forensics/Investigative-Reversing-2/)              | 350    |
+| [`WebNet0`](Forensics/WebNet0/)              | 350    |
+| [`pastaAAA`](Forensics/pastaAAA/)              | 350    |
+| [`Investigative Reversing 3`](Forensics/Investigative-Reversing-3/)              | 400    |
+| [`Investigative Reversing 4`](Forensics/Investigative-Reversing-4/)              | 400    |
+| [`WebNet1`](Forensics/WebNet1/)              | 450    |
+| [`investigation_encoded_1`](Forensics/investigation_encoded_1/)              | 450    |
+| [`B1g_Mac`](Forensics/B1g_Mac/)              | 500    |
+| [`investigation_encoded_2`](Forensics/investigation_encoded_2/)              | 500    |
