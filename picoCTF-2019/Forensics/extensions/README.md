@@ -1,15 +1,15 @@
 # extensions
 
-__PROBLEM__
+__Problem__
 
-This is a really weird text file TXT? Can you find the flag?
+> This is a really weird text file [TXT](flag.txt)? Can you find the flag?
 
 __HINT__
 
-How do operating systems know what kind of file it is? (It's not just the ending!
-Make sure to submit the flag as picoCTF{XXXXX}
+>How do operating systems know what kind of file it is? (It's not just the ending!
+>Make sure to submit the flag as picoCTF{XXXXX}
 
-__SOLUTION__
+__Solution__
 
 From the following hints, we can see that we need to find what kind of file it is. Well, one can argue the the extension is .txt! What's wrong with that? Well, point to be noted.
 ```
@@ -35,4 +35,6 @@ $xdg-open flag.png
 ```
 and there resides your flag :)
 
-FLAG - picoCTF{now_you_know_about_extensions}
+__Flag__
+
+picoCTF{now_you_know_about_extensions}
