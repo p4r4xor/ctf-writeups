@@ -1,20 +1,18 @@
 # c0rrupt
-Forensics, 250 points
 
-__PROBLEM__
+__Problem__
 > We found this file. Recover the flag.
 
-
-__HINTS__
+__Hints__
 
 Try fixing the file header
 
-__SOLUTION__
+__Solution__
  
 Let's see what we can tell about the file:
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# file mystery
+$ file mystery
 mystery: data
 root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 mystery | head
 00000000: 89 65 4e 34 0d 0a b0 aa 00 00 00 0d 43 22 44 52  .eN4........C"DR
@@ -32,8 +30,8 @@ root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 mystery | head
 `file` won't recognize it, but inspecting the header we can see strings which are common in PNG files. According to the [PNG specs], the first 8 bytes of the file are constant, so let's go ahead and fix that:
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# cp mystery fixed.png
-root@kali:/media/sf_CTFs/pico/c0rrupt# printf '\x89\x50\x4E\x47\x0D\x0A\x1A\x0A' | dd of=fixed.png bs=1 seek=0 count=8 conv=notrunc
+$ cp mystery fixed.png
+$ printf '\x89\x50\x4E\x47\x0D\x0A\x1A\x0A' | dd of=fixed.png bs=1 seek=0 count=8 conv=notrunc
 8+0 records in
 8+0 records out
 8 bytes copied, 0.00550841 s, 1.5 kB/s
@@ -53,7 +51,7 @@ root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 fixed.png | head
 After the header come a series of chunks. Each chunk starts with 4 bytes for the length of the chunk, 4 bytes for the type, then the chunk content itself (with the length declared earlier) and 4 bytes of a checksum. The first chunk is `IHDR` and has the length of `0xD`, so let's fix that as well.
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# printf '\x00\x00\x00\x0D\x49\x48\x44\x52' | dd of=fixed.png bs=1 seek=8 count=8 conv=notrunc
+$ printf '\x00\x00\x00\x0D\x49\x48\x44\x52' | dd of=fixed.png bs=1 seek=8 count=8 conv=notrunc
 8+0 records in
 8+0 records out
 8 bytes copied, 0.00210317 s, 3.8 kB/s
@@ -78,7 +76,7 @@ fixed.png: PNG image data, 1642 x 1095, 8-bit/color RGB, non-interlaced
 
 However, `pngcheck` complains about errors:
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# pngcheck -v -f fixed.png
+$ pngcheck -v -f fixed.png
 File: fixed.png (202940 bytes)
   chunk IHDR at offset 0x0000c, length 13
     1642 x 1095 image, 24-bit RGB, non-interlaced
@@ -117,11 +115,11 @@ Unit specifier:          1 byte                     <-- 01
 Since the pixels per unit differ in just one byte, and the 0xaa for the X axis makes the value very large, it makes sense to place a zero instead. Let's see if that fixes the checksum:
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# printf '\x00' | dd of=fixed.png bs=1 seek=70 count=1 conv=notrunc
+$ printf '\x00' | dd of=fixed.png bs=1 seek=70 count=1 conv=notrunc
 1+0 records in
 1+0 records out
 1 byte copied, 0.00376626 s, 0.3 kB/s
-root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 fixed.png | head
+$ xxd -g 1 fixed.png | head
 00000000: 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  .PNG........IHDR
 00000010: 00 00 06 6a 00 00 04 47 08 02 00 00 00 7c 8b ab  ...j...G.....|..
 00000020: 78 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00  x....sRGB.......
@@ -132,7 +130,7 @@ root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 fixed.png | head
 00000070: f9 ed 40 a0 f3 6e 40 7b 90 23 8f 1e d7 20 8b 3e  ..@..n@{.#... .>
 00000080: b7 c1 0d 70 03 74 b5 03 ae 41 6b f8 be a8 fb dc  ...p.t...Ak.....
 00000090: 3e 7d 2a 22 33 6f de 5b 55 dd 3d 3d f9 20 91 88  >}*"3o.[U.==. ..
-root@kali:/media/sf_CTFs/pico/c0rrupt# pngcheck -v -f fixed.png
+$ pngcheck -v -f fixed.png
 File: fixed.png (202940 bytes)
   chunk IHDR at offset 0x0000c, length 13
     1642 x 1095 image, 24-bit RGB, non-interlaced
@@ -149,14 +147,14 @@ That fixed the problem, we remain with a "invalid chunk length (too large)" mess
 Let's take a look at what starts after the `pHYs` chunk ends:
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 -s 0x53 -l 8 fixed.png
+$ xxd -g 1 -s 0x53 -l 8 fixed.png
 00000053: aa aa ff a5 ab 44 45 54                          .....DET
 ```
 
 We have a chunk of size 0xaaaaffa5 which is very large, and a type of `\xabDET` which doesn't exist. The closest chunk type is IDAT, let's try to fix that first:
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# printf 'IDAT' | dd of=fixed.png bs=1 seek=87 count=4 conv=notrunc
+$ printf 'IDAT' | dd of=fixed.png bs=1 seek=87 count=4 conv=notrunc
 4+0 records in
 4+0 records out
 4 bytes copied, 0.00224062 s, 1.8 kB/s
@@ -174,7 +172,7 @@ IEND    No      Must be last
 So we can search for the next IDAT chunk (if it exists) and calculate the difference.
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# binwalk -R "IDAT" fixed.png
+$ binwalk -R "IDAT" fixed.png
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
@@ -187,11 +185,11 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 The next `IDAT` chunk is at offset `0x10004`. We count the length of the first `IDAT` chunk starting from `0x5B`, and need to add another extra 4 bytes for the checksum. Therefore, we get the length of `0x10004 - 0x5B - 0x4 = 0xFFA5` which is good since the original value is `0xAAAAFFA5`. So, we just need to override `0xAAAA` with zeroes again.
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# printf '\x00\x00' | dd of=fixed.png bs=1 seek=83 count=2 conv=notrunc
+$ printf '\x00\x00' | dd of=fixed.png bs=1 seek=83 count=2 conv=notrunc
 2+0 records in
 2+0 records out
 2 bytes copied, 0.00197452 s, 1.0 kB/s
-root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 fixed.png | head
+$ xxd -g 1 fixed.png | head
 00000000: 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  .PNG........IHDR
 00000010: 00 00 06 6a 00 00 04 47 08 02 00 00 00 7c 8b ab  ...j...G.....|..
 00000020: 78 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00  x....sRGB.......
@@ -207,7 +205,7 @@ root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 fixed.png | head
 `pngcheck` doesn't complain anymore:
 
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# pngcheck -v -f fixed.png
+$ pngcheck -v -f fixed.png
 File: fixed.png (202940 bytes)
   chunk IHDR at offset 0x0000c, length 13
     1642 x 1095 image, 24-bit RGB, non-interlaced
@@ -224,8 +222,10 @@ File: fixed.png (202940 bytes)
 No errors detected in fixed.png (9 chunks, 96.3% compression).
 ```
 
-All thanks to https://github.com/Dvd848/ for the solution. I couldn't have explained it better.
+All thanks to [David](https://github.com/Dvd848/) for the solution.
 
 Viewing the image, we get the flag: `picoCTF{c0rrupt10n_1847995}`.
 
-FLAG - picoCTF{c0rrupt10n_1847995}
+__Flag__
+
+picoCTF{c0rrupt10n_1847995}
