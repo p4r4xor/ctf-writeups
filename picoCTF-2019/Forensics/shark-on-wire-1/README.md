@@ -1,15 +1,15 @@
 # shark on wire 1
 
-__PROBLEM__
+__Problem__
 
 We found this packet capture. Recover the flag. You can also find the file in /problems/shark-on-wire-1_0_13d709ec13952807e477ba1b5404e620.
 
-__HINT__
+__Hint__
 
 Try using a tool like Wireshark
 What are streams?
 
-__SOLUTION__
+__Solution__
 
 Looks like a new extension huh? `.pcap`. These kind of files can be opened by using tools like wireshark or tshark (just don't forget to do the `file` command on the given files before diving in!). 
 
@@ -50,4 +50,6 @@ picoCTF{N0t_a_fLag}
 (Stream #7)
 ```
 
-FLAG - picoCTF{StaT31355_636f6e6e}
+__FLAG__
+
+picoCTF{StaT31355_636f6e6e}
