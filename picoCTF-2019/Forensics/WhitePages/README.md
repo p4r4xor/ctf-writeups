@@ -1,14 +1,14 @@
-# So Meta
+# WhitePages
 
-__PROBLEM__
+__Problem__
 
-I stopped using YellowPages and moved onto WhitePages... but the page they gave me is all blank!
+I stopped using YellowPages and moved onto [WhitePages](whitepages.txt)... but the page they gave me is all blank!
 
-__HINT__
+__Hint__
 
 None.
 
-__SOLUTION__
+__Solution__
 
 No hints. This challenge would be a pain in the ass for newbies. But yet :v lets move on.
 Given a text file (make sure it's a text file first), I've done `cat whitepages.txt` but no avail.
@@ -38,4 +38,6 @@ pwntools is a library specially made for CTF purposes. Have fun installing it :p
 If you couldn't, open the file in a text editor and `find and replace` the `\x20` with `1` and `\xe2\x80\x83` with `0`.
 Running the following script gives you the flag :)
 
-FLAG - picoCTF{not_all_spaces_are_created_equal_f006c045f6b402ce4bc749dc7a262380}
+__FLAG__
+
+picoCTF{not_all_spaces_are_created_equal_f006c045f6b402ce4bc749dc7a262380}
