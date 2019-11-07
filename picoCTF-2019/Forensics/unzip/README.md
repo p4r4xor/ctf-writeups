@@ -1,14 +1,14 @@
 # unzip
 
-__PROBLEM__
+__Problem__
 
 Can you unzip this [file](flag.zip) and get the flag?
 
-__HINT__
+__Hint__
 
 put the flag in the format picoCTF{XXXXX}
 
-__SOLUTION__
+__Solution__
 
 The title says to unzip the given file. The following does this.
 ```bash
@@ -18,4 +18,6 @@ $ xdg-open flag.png
 xdg-open lets you open files from the terminal instead of manually clicking it.
 The flag is inside the png.
 
-FLAG - picoCTF{unz1pp1ng_1s_3a5y}
+__Flag__
+
+picoCTF{unz1pp1ng_1s_3a5y}
