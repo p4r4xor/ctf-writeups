@@ -51,4 +51,4 @@ There's your flag :)
 
 __Flag__
 
-picoCTF{s0_m3ta_505fdd8b}
+> picoCTF{s0_m3ta_505fdd8b}
