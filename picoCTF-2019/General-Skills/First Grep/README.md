@@ -17,4 +17,5 @@ grep "picoCTF" file
 Basically you are asking the `grep` command to find a string `picoCTF` in a `file`
 
 __Flag__
-`picoCTF{grep_is_good_to_find_things_eda8911c}`
+
+> picoCTF{grep_is_good_to_find_things_eda8911c}
