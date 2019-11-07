@@ -2,11 +2,11 @@
 
 __Problem__
 
-There's a flag shop selling stuff, can you buy a flag? [Source](store.c). Connect with nc 2019shell1.picoctf.com 29250.
+> There's a flag shop selling stuff, can you buy a flag? [Source](store.c). Connect with nc 2019shell1.picoctf.com 29250.
 
 __Hint__
 
-Two's compliment can do some weird things when numbers get really big!
+> Two's compliment can do some weird things when numbers get really big!
 
 __Solution__
 
