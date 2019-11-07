@@ -6,15 +6,9 @@ Currently I am a member of [Break In](https://ctftime.org/team/15143) which is m
 
 # Index
 
-* __2018__
-
-| Names                   | No. of writeups |
-|------------------------|--------|
-| [`UUTCTF`](UUTCTF-2018/)| 1   |
-
-
 * __2019__
 
 | Names                   | No. of writeups |
 |------------------------|--------|
 | [`picoCTF`](picoCTF-2019/)| 94   |
+| [`UUTCTF`](UUTCTF-2018/)| 1   |
