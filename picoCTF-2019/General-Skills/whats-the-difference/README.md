@@ -1,15 +1,16 @@
 # whats-the-difference
 
-__PROBLEM__
+__Problem__
 
-Can you spot the difference? [kitters](kitters.jpg) [cattos](cattos.jpg). They are also available at /problems/whats-the-difference_0_00862749a2aeb45993f36cc9cf98a47a on the shell server
+> Can you spot the difference? [kitters](kitters.jpg) [cattos](cattos.jpg). They are also available at /problems/whats-the-difference_0_00862749a2aeb45993f36cc9cf98a47a on the shell server
 
-__HINT__
+__Hint__
 
-How do you find the difference between two files?
-Dumping the data from a hex editor may make it easier to compare.
+> How do you find the difference between two files?
 
-__SOLUTION__
+> Dumping the data from a hex editor may make it easier to compare.
+
+__Solution__
 
 Given the hints, we need to find the difference between the files while dumping the hex of it.
 The first way is to manually do it, the second being the automated.
@@ -34,4 +35,6 @@ print flag
 ```
 
 
-FLAG - `picoCTF{th3yr3_a5_d1ff3r3nt_4s_bu773r_4nd_j311y_aslkjfdsalkfslkflkjdsfdszmz10548}`
+__FLAG__
+
+> picoCTF{th3yr3_a5_d1ff3r3nt_4s_bu773r_4nd_j311y_aslkjfdsalkfslkflkjdsfdszmz10548}`
