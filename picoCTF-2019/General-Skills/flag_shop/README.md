@@ -1,18 +1,18 @@
 # flag_shop
 
-__PROBLEM__
+__Problem__
 
 There's a flag shop selling stuff, can you buy a flag? [Source](store.c). Connect with nc 2019shell1.picoctf.com 29250.
 
-__HINT__
+__Hint__
 
 Two's compliment can do some weird things when numbers get really big!
 
-__SOLUTION__
+__Solution__
 
 By reading the source code, we see that the total_cost is stored as a 4 byte signed integer:
 
-```
+```C
 if(number_flags > 0){
     int total_cost = 0;
     total_cost = 900*number_flags;
@@ -29,7 +29,7 @@ if(number_flags > 0){
 ```
 If we enter a large number for number_flags, 900*number_flags would overflow and turn into a large negative number.
 
-```
+```console
 $ nc 2019shell1.picoctf.com 29250
 Welcome to the flag exchange
 We sell flags
@@ -75,4 +75,6 @@ YOUR FLAG IS: picoCTF{m0n3y_bag5_cd0ead78}
 ```
 
 
-FLAG - `picoCTF{m0n3y_bag5_cd0ead78}`
+__Flag__ 
+
+> picoCTF{m0n3y_bag5_cd0ead78}
