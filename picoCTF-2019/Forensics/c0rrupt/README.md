@@ -5,7 +5,7 @@ __Problem__
 
 __Hints__
 
-Try fixing the file header
+> Try fixing the file header
 
 __Solution__
  
@@ -14,7 +14,7 @@ Let's see what we can tell about the file:
 ```console
 $ file mystery
 mystery: data
-root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 mystery | head
+$ xxd -g 1 mystery | head
 00000000: 89 65 4e 34 0d 0a b0 aa 00 00 00 0d 43 22 44 52  .eN4........C"DR
 00000010: 00 00 06 6a 00 00 04 47 08 02 00 00 00 7c 8b ab  ...j...G.....|..
 00000020: 78 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00  x....sRGB.......
@@ -35,7 +35,7 @@ $ printf '\x89\x50\x4E\x47\x0D\x0A\x1A\x0A' | dd of=fixed.png bs=1 seek=0 count=
 8+0 records in
 8+0 records out
 8 bytes copied, 0.00550841 s, 1.5 kB/s
-root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 fixed.png | head
+$ xxd -g 1 fixed.png | head
 00000000: 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 43 22 44 52  .PNG........C"DR
 00000010: 00 00 06 6a 00 00 04 47 08 02 00 00 00 7c 8b ab  ...j...G.....|..
 00000020: 78 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00  x....sRGB.......
@@ -55,7 +55,7 @@ $ printf '\x00\x00\x00\x0D\x49\x48\x44\x52' | dd of=fixed.png bs=1 seek=8 count=
 8+0 records in
 8+0 records out
 8 bytes copied, 0.00210317 s, 3.8 kB/s
-root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 fixed.png | head
+$ xxd -g 1 fixed.png | head
 00000000: 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  .PNG........IHDR
 00000010: 00 00 06 6a 00 00 04 47 08 02 00 00 00 7c 8b ab  ...j...G.....|..
 00000020: 78 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00  x....sRGB.......
@@ -70,7 +70,7 @@ root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 fixed.png | head
 
 Now the file is identified as a PNG file:
 ```console
-root@kali:/media/sf_CTFs/pico/c0rrupt# file fixed.png
+$ file fixed.png
 fixed.png: PNG image data, 1642 x 1095, 8-bit/color RGB, non-interlaced
 ```
 
@@ -91,7 +91,7 @@ ERRORS DETECTED in fixed.png
 
 Let's take a look at the `pHYs` chunk:
 ```
-root@kali:/media/sf_CTFs/pico/c0rrupt# xxd -g 1 -s 0x3e -l $((4+4+9+4)) fixed.png
+$ xxd -g 1 -s 0x3e -l $((4+4+9+4)) fixed.png
 0000003e: 00 00 00 09 70 48 59 73 aa 00 16 25 00 00 16 25  ....pHYs...%...%
 0000004e: 01 49 52 24 f0                                   .IR$.
 ```
@@ -228,4 +228,4 @@ Viewing the image, we get the flag: `picoCTF{c0rrupt10n_1847995}`.
 
 __Flag__
 
-picoCTF{c0rrupt10n_1847995}
+> picoCTF{c0rrupt10n_1847995}
