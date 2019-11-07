@@ -2,12 +2,13 @@
 
 __Problem__
 
-Find the flag in this [picture](pico_img.png). You can also find the file in /problems/so-meta_6_8d7541b8d04bd65a01336fdb8db6db24.
+> Find the flag in this [picture](pico_img.png). You can also find the file in /problems/so-meta_6_8d7541b8d04bd65a01336fdb8db6db24.
 
 __Hint__
 
-What does meta mean in the context of files?
-Ever hear of metadata?
+> What does meta mean in the context of files?
+
+> Ever hear of metadata?
 
 __Solution__
 
