@@ -12,8 +12,8 @@ __SOLUTION__
 
 This is a basic introduction to ASCII codes. Using python to find it:
 ```python
-chr(0x70)
-'p'
+>>>chr(0x70)
+>>>'p'
 ```
 
 FLAG - picoCTF{p}
