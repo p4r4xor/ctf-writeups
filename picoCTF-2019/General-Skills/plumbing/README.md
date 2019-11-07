@@ -17,6 +17,6 @@ This is basicallly a combination of [net cat](../net%20cat/) and [grep 1](../gre
 $ nc 2019shell1.picoctf.com 18944 | grep picoCTF
 ```
 
-__FLAG__ 
+__Flag__ 
 
 > picoCTF{digital_plumb3r_931b2271}
