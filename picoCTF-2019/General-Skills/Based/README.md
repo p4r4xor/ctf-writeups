@@ -34,6 +34,6 @@ sh.interactive()
 
 ```
 
-__FLAG__
+__Flag__
 
 > picoCTF{learning_about_converting_values_6cdcad0d}
