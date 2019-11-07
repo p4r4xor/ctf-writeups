@@ -39,7 +39,7 @@ root@kali:/media/sf_CTFs/pico/m00nwalk# paplay -d virtual-cable message.wav
 
 The image is received and decoded by the program:
 
-![](images/m00nwalk.png)
+
 
 After the transmission has ended, we can cleanup by using the following commands:
 
@@ -51,5 +51,6 @@ root@kali:/media/sf_CTFs/pico# pactl unload-module 22
 Thanks [David](https://github.com/Dvd848/)
 
 __Flag__ 
-`picoCTF{beep_boop_im_in_space}`
+
+picoCTF{beep_boop_im_in_space}
 
