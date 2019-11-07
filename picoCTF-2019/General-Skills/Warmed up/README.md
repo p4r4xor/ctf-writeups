@@ -1,14 +1,14 @@
 # Warmed up
 
-__PROBLEM__
+__Problem__
 
-What is 0x3D (base 16) in decimal (base 10).
+> What is 0x3D (base 16) in decimal (base 10).
 
-__HINT__
+__Hint__
 
-Submit your answer in our competition's flag format. For example, if you answer was '22', you would submit 'picoCTF{22}' as the flag.
+> Submit your answer in our competition's flag format. For example, if you answer was '22', you would submit 'picoCTF{22}' as the flag.
 
-__SOLUTION__
+__Solution__
 
 Again using python:
 
@@ -17,4 +17,6 @@ Again using python:
 >>> 61
 ```
 
-FLAG - picoCTF{61}
+__FLAG__
+
+> picoCTF{61}
