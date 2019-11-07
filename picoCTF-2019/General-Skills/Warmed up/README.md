@@ -17,6 +17,6 @@ Again using python:
 >>> 61
 ```
 
-__FLAG__
+__Flag__
 
 > picoCTF{61}
