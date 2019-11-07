@@ -1,16 +1,16 @@
 # Investigative Reversing 0
 
-__PROBLEM__
+__Problem__
 
-We have recovered a binary and an image. See what you can make of it. There should be a flag somewhere. Its also found in /problems/investigative-reversing-0_0_ebc669df876196bdc09a2f54fd5fffed on the shell server.
+We have recovered a [binary](mystery) and an [image](mystery.png). See what you can make of it. There should be a flag somewhere. Its also found in /problems/investigative-reversing-0_0_ebc669df876196bdc09a2f54fd5fffed on the shell server.
 
-__HINT__
+__Hint__
 
 Try using some forensics skills on the image
 This problem requires both forensics and reversing skills
 A hex editor may be helpful
 
-__SOLUTION__
+__Solution__
 
 We're down to the main challenges now! Let's do this!
 We're given a binary file and an image, let us first reverse engineer the following code.
@@ -82,5 +82,7 @@ print data
 ```
 After running the above script, we'll get our flag :).
 
-FLAG - picoCTF{f0und_1t_eeaec48b}
+__Flag__
+
+picoCTF{f0und_1t_eeaec48b}
 
