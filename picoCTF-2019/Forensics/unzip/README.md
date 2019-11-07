@@ -11,9 +11,9 @@ put the flag in the format picoCTF{XXXXX}
 __SOLUTION__
 
 The title says to unzip the given file. The following does this.
-```
-$unzip flag.zip
-$xdg-open flag.png
+```bash
+$ unzip flag.zip
+$ xdg-open flag.png
 ```
 xdg-open lets you open files from the terminal instead of manually clicking it.
 The flag is inside the png.
