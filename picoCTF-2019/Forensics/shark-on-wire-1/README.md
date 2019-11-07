@@ -2,12 +2,13 @@
 
 __Problem__
 
-We found this packet [capture](capture.pcap). Recover the flag. You can also find the file in /problems/shark-on-wire-1_0_13d709ec13952807e477ba1b5404e620.
+> We found this packet [capture](capture.pcap). Recover the flag. You can also find the file in /problems/shark-on-wire-1_0_13d709ec13952807e477ba1b5404e620.
 
 __Hint__
 
-Try using a tool like Wireshark
-What are streams?
+> Try using a tool like Wireshark
+
+> What are streams?
 
 __Solution__
 
@@ -15,15 +16,14 @@ Looks like a new extension huh? `.pcap`. These kind of files can be opened by us
 
 Installing wireshark:
 ```
-$sudo apt-get install wireshark
-$sudo dpkg-reconfigure wireshark-common
-$sudo adduser $USER wireshark
-$wireshark
+$ sudo apt-get install wireshark
+$ sudo dpkg-reconfigure wireshark-common
+$ sudo adduser $USER wireshark
+$ wireshark
 ```
 To open the file in wireshark, do the following.
 ```
-$wireshark capture.pcap
-
+$ wireshark capture.pcap
 ```
 Once you open the file, you can see random things which you perhaps might not understand :p
 Well, these are network packets captured between some communication. 
@@ -43,7 +43,7 @@ you can do the following if you're well experienced.
 Known that there are only 4 types of streams given by default for wireshark/tshark, one can check manually.
 
 ```
-$PCAP=capture.pcap; END=$(tshark -r $PCAP -T fields -e udp.stream | sort -n | tail -1); for ((i=0;i<=END;i++)); do tshark -r $PCAP -Y "udp.stream eq $i" -T fields -e data.text -o data.show_as_text:TRUE 2>/dev/null | tr -d '\n' | grep "picoCTF"; if [ $? -eq 0 ]; then echo "(Stream #$i)"; fi; done
+$ PCAP=capture.pcap; END=$(tshark -r $PCAP -T fields -e udp.stream | sort -n | tail -1); for ((i=0;i<=END;i++)); do tshark -r $ PCAP -Y "udp.stream eq $i" -T fields -e data.text -o data.show_as_text:TRUE 2>/dev/null | tr -d '\n' | grep "picoCTF"; if [ $? -eq 0 ]; then echo "(Stream #$i)"; fi; done
 picoCTF{StaT31355_636f6e6e}
 (Stream #6)
 picoCTF{N0t_a_fLag}
@@ -52,4 +52,4 @@ picoCTF{N0t_a_fLag}
 
 __Flag__
 
-picoCTF{StaT31355_636f6e6e}
+> picoCTF{StaT31355_636f6e6e}
