@@ -2,7 +2,7 @@
 
 __PROBLEM__
 
-This garden contains more than it seems. You can also find the file in /problems/glory-of-the-garden_3_346e50df4a37bcc4aa5f6e5831604e2a on the shell server.
+This [garden](garden.jpg) contains more than it seems. You can also find the file in /problems/glory-of-the-garden_3_346e50df4a37bcc4aa5f6e5831604e2a on the shell server.
 
 __HINT__
 
