@@ -6,7 +6,7 @@ __Problem__
 
 __Hint__
 
-Submit your answer in our competition's flag format. For example, if you answer was 'hello', you would submit 'picoCTF{hello}' as the flag.
+> Submit your answer in our competition's flag format. For example, if you answer was 'hello', you would submit 'picoCTF{hello}' as the flag.
 
 __Solution__
 
