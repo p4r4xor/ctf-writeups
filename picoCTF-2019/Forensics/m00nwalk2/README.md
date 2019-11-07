@@ -1,14 +1,14 @@
 # m00nwalk2
 
-__PROBLEM__
+__Problem__
 
 Revisit the last transmission. We think this transmission contains a hidden message. There are also some clues clue 1, clue 2, clue 3. You can also find the files in /problems/m00nwalk2_0_c513cbf9ae6c76876372b8e29826e77b.
 
-__HINT__
+__Hint__
 
 Use the clues to extract the another flag from the .wav file
 
-__SOLUTION__
+__Solution__
 
 Please revisit m00nwalk(the first part) for a detailed explanation on how it works.
 Plugging in all the three `.wav` files into QSSTV, we get the following messages.
@@ -30,4 +30,6 @@ $ cat steganopayload12154.txt
 picoCTF{the_answer_lies_hidden_in_plain_sight}
 ```
 
-FLAG - picoCTF{the_answer_lies_hidden_in_plain_sight}
+__Flag__
+
+picoCTF{the_answer_lies_hidden_in_plain_sight}
