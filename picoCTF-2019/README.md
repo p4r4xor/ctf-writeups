@@ -6,7 +6,7 @@
 
 > PRs are most welcomed. 
 
-![alt text](https://ibb.co/9vX3Z1Y)
+![alt text](https://ibb.co/9vX3Z1Y?raw=true "Title")
 # Index
 
 * __General Skills__
