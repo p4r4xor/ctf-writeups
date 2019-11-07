@@ -1,6 +1,6 @@
 # picoCTF Writeups
 
-Participated in [picoCTF 2019](https://picoctf.com/).Was able to solve 94 problems out of 120, which is not that bad :p :)
+Participated in [picoCTF 2019](https://picoctf.com/).Was able to solve 94 problems out of 120, which is not that bad :wink:
 
 # Index
 
