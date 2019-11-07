@@ -2,11 +2,11 @@
 
 __Problem__
 
-I stopped using YellowPages and moved onto [WhitePages](whitepages.txt)... but the page they gave me is all blank!
+> I stopped using YellowPages and moved onto [WhitePages](whitepages.txt)... but the page they gave me is all blank!
 
 __Hint__
 
-None.
+> None.
 
 __Solution__
 
@@ -40,4 +40,4 @@ Running the following script gives you the flag :)
 
 __Flag__
 
-picoCTF{not_all_spaces_are_created_equal_f006c045f6b402ce4bc749dc7a262380}
+> picoCTF{not_all_spaces_are_created_equal_f006c045f6b402ce4bc749dc7a262380}
