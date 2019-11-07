@@ -86,5 +86,5 @@ After running the above script, we'll get our flag :).
 
 __Flag__
 
-picoCTF{f0und_1t_eeaec48b}
+> picoCTF{f0und_1t_eeaec48b}
 
