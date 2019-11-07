@@ -29,7 +29,7 @@ b4,rgb,msb,xy       .. text: "dUcv%F#A`"
 b4,bgr,msb,xy       .. text: " V\"c7Ga4"
 b4,abgr,msb,xy      .. text: "gOC_$_@o"
 ```
-Well, you can see that the flag is hidden at `b1,rgb,lsb,xy`, which means that its at `bits 2, channel rgb, lsb, order xy`. What we need to be focusing here is the `lsb` part. `lsb` is called "least significant bit". More will be discussed about this in my upcoming picoCTF write-ups (the ones which have more points).
+Well, you can see that the flag is hidden at `b1,rgb,lsb,xy`, which means that its at `bits 2, channel rgb, lsb, order xy`. What we need to be focusing here is the `lsb` part. `lsb` is called `least significant bit`. More will be discussed about this in my upcoming picoCTF write-ups (the ones which have more points).
 There's your flag :)
 
 __Flag__ 
