@@ -6,6 +6,9 @@
 
 > PRs are most welcomed. 
 
+![pico](https://user-images.githubusercontent.com/49688892/68421599-91a7a400-016c-11ea-933a-b31a90ba3a77.png)
+
+
 # Index
 
 * __General Skills__
