@@ -1,15 +1,15 @@
 # So Meta
 
-__PROBLEM__
+__Problem__
 
-Find the flag in this picture. You can also find the file in /problems/so-meta_6_8d7541b8d04bd65a01336fdb8db6db24.
+Find the flag in this [picture](pico_img.png). You can also find the file in /problems/so-meta_6_8d7541b8d04bd65a01336fdb8db6db24.
 
-__HINT__
+__Hint__
 
 What does meta mean in the context of files?
 Ever hear of metadata?
 
-__SOLUTION__
+__Solution__
 
 The hints leads you to find metadata in the given picture. exiftool does the job.
 ```
@@ -47,4 +47,6 @@ Megapixels                      : 0.360
 ```
 There's your flag :)
 
-FLAG - picoCTF{s0_m3ta_505fdd8b}
+__Flag__
+
+picoCTF{s0_m3ta_505fdd8b}
