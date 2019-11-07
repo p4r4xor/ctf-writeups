@@ -1,14 +1,14 @@
 # shark on wire 2
 
-__PROBLEM__
+__Problem__
 
 We found this packet capture. Recover the flag that was pilfered from the network. You can also find the file in /problems/shark-on-wire-2_0_3e92bfbdb2f6d0e25b8d019453fdbf07.
 
-__HINT__
+__Hint__
 
 None.
 
-__SOLUTION__
+__Solution__
 
 Given a capture file, I tried to do the same strategy used in shark on wire 1. But no avail.
 ```bash
@@ -166,7 +166,7 @@ How different? Very different :)
 The last three digits of each of the source port are different and the first port starts with `112` which is `p` in ASCII representation.
 The following script now prints us the flag.
 
-```
+```python
 from scapy.all import *
 
 flag = ""
@@ -178,4 +178,6 @@ for packet in packets:
 print flag
 ```
 
-FLAG - picoCTF{p1LLf3r3d_data_v1a_st3g0}
+__Flag__
+
+picoCTF{p1LLf3r3d_data_v1a_st3g0}
