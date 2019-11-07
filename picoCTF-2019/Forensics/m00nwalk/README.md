@@ -3,12 +3,12 @@
 
 __Problem__
 
-Decode this [message](message.wav) from the moon. You can also find the file in /problems/m00nwalk_4_bcf65d52e5462dd0b70c0e984d7d5015.
+> Decode this [message](message.wav) from the moon. You can also find the file in /problems/m00nwalk_4_bcf65d52e5462dd0b70c0e984d7d5015.
 
 __Hints__
 
-* How did pictures from the moon landing get sent back to Earth?
-* What is the CMU mascot?, that might help select a RX option
+> How did pictures from the moon landing get sent back to Earth?
+> What is the CMU mascot?, that might help select a RX option
 
 __Solution__
 
@@ -22,19 +22,19 @@ Nothing meaningful can be identified listening to the file. Also visualizing the
 In short:
 
 ```console
-root@kali:/media/sf_CTFs/pico/m00nwalk# apt-get install qsstv
-root@kali:~# pactl load-module module-null-sink sink_name=virtual-cable
+$ apt-get install qsstv
+$ pactl load-module module-null-sink sink_name=virtual-cable
 22
-root@kali:~# pavucontrol # A GUI will pop-up, go to the "Output Devices" tab to verify that you have the "Null Output" device
-root@kali:~# qsstv # The program GUI will pop-up, go to "Options" -> "Configuration" -> "Sound" and select the "PulseAudio" Audio Interface
-root@kali:~# # Back in the pavucontrol GUI, select the "Recording" tab and specify that QSSTV should capture audio from the Null Output
+$ pavucontrol # A GUI will pop-up, go to the "Output Devices" tab to verify that you have the "Null Output" device
+$ qsstv # The program GUI will pop-up, go to "Options" -> "Configuration" -> "Sound" and select the "PulseAudio" Audio Interface
+$ # Back in the pavucontrol GUI, select the "Recording" tab and specify that QSSTV should capture audio from the Null Output
 ```
 
 The hint asked "What is the CMU mascot?" - the answer is "Scotty the Scottie Dog". This hinted that we should select "Scottie 1" as QSSTV's "Mode". I also had to select "Auto Slant" via trial and error.
 
 At this point we can click the "Play" button in QSSTV to start the receiver, and then play the audio file:
 ```console
-root@kali:/media/sf_CTFs/pico/m00nwalk# paplay -d virtual-cable message.wav 
+$ paplay -d virtual-cable message.wav 
 ```
 
 The image is received and decoded by the program:
@@ -44,13 +44,13 @@ The image is received and decoded by the program:
 After the transmission has ended, we can cleanup by using the following commands:
 
 ```console
-root@kali:/media/sf_CTFs/pico# pactl list short modules | grep null
+$ pactl list short modules | grep null
 22      module-null-sink        sink_name=virtual-cable
-root@kali:/media/sf_CTFs/pico# pactl unload-module 22
+$ pactl unload-module 22
 ```
 Thanks [David](https://github.com/Dvd848/)
 
 __Flag__ 
 
-picoCTF{beep_boop_im_in_space}
+> picoCTF{beep_boop_im_in_space}
 
