@@ -11,9 +11,10 @@ Ever hear of metadata?
 
 __Solution__
 
-The hints leads you to find metadata in the given picture. exiftool does the job.
+The hints leads you to find metadata in the given picture. 
+exiftool does the job.
 ```
-$exiftool pico_img.png
+$ exiftool pico_img.png
 ExifTool Version Number         : 11.70
 File Name                       : pico_img.png
 Directory                       : .
