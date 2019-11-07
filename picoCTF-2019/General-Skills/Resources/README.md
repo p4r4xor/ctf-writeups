@@ -1,15 +1,17 @@
 # Resources
 
-__PROBLEM__
+__Problem__
 
-We put together a bunch of resources to help you out on our website! If you go over there, you might even find a flag! https://picoctf.com/resources ([link](https://picoctf.com/resources))
+> We put together a bunch of resources to help you out on our website! If you go over there, you might even find a flag! https://picoctf.com/resources ([link](https://picoctf.com/resources))
 
-__HINT__
+__Hint__
 
-no hint
+> no hint
 
-__SOLUTION__
+__Solution__
 
 Just go on the website
 
-FLAG - `picoCTF{r3source_pag3_f1ag}`
+__Flag__
+
+> picoCTF{r3source_pag3_f1ag}
