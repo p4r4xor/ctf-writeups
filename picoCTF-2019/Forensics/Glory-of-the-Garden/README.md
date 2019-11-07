@@ -18,7 +18,7 @@ $ sudo apt-get install ghex
 ...
 $ ghex garden.jpg
 ```
-and find your flag by scanning the whole hex dump :relaxed smirk: or you could use strings to find the flag.
+and find your flag by scanning the whole hex dump :blush: or you could use strings to find the flag.
 
 ```
 $ strings garden.jpg
