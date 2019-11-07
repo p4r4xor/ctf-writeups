@@ -37,4 +37,4 @@ and there resides your flag :)
 
 __Flag__
 
-picoCTF{now_you_know_about_extensions}
+> picoCTF{now_you_know_about_extensions}
