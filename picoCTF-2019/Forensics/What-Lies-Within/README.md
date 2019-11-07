@@ -2,11 +2,11 @@
 
 __Problem__
 
-Theres something in the [building](buildings.png). Can you retrieve the flag?
+> Theres something in the [building](buildings.png). Can you retrieve the flag?
 
 __Hint__
 
-There is data encoded somewhere, there might be an online decoder.
+> There is data encoded somewhere, there might be an online decoder.
 
 __Solution__
 
