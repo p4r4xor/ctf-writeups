@@ -34,4 +34,4 @@ There's your flag :)
 
 __Flag__ 
 
-picoCTF{h1d1ng_1n_th3_b1t5}
+> picoCTF{h1d1ng_1n_th3_b1t5}
