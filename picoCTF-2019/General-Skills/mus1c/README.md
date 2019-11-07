@@ -1,14 +1,14 @@
 # mus1c
 
-__PROBLEM__
+__Problem__
 
-I wrote you a [song](lyrics.txt). Put it in the picoCTF{} flag format
+> I wrote you a [song](lyrics.txt). Put it in the picoCTF{} flag format
 
-__HINT__
+__Hint__
 
-Do you think you can master rockstar?
+> Do you think you can master rockstar?
 
-__SOLUTION__
+__Solution__
 
 The given text file is written in the esoteric language [rockstar](https://codewithrockstar.com/). You can run it over [here](https://codewithrockstar.com/online)
 ```
@@ -53,4 +53,6 @@ $ python
 
 ```
 
-FLAG - `picoCTF{rrrocknrn0113r}`
+__Flag__
+
+> picoCTF{rrrocknrn0113r}
