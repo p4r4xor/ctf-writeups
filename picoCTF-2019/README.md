@@ -22,7 +22,7 @@
 | [`First Grep`](General-Skills/First%20Grep/)           | 100    |
 | [`Resources`](General-Skills/Resources/)           | 100    |
 | [`strings it`](General-Skills/Strings%20it/)           | 100    |
-| [`what's a net cat?`](General-Skills/What's%20a%20Net%20Cat?/)           | 100    |
+| [`what's a net cat?`](General-Skills/What's%20a%20Net%20Cat%3F/)           | 100    |
 | [`Based`](General-Skills/Based/)           | 200    |
 | [`First Grep: Part II`](General-Skills/First%20Grep:%20Part%20II/)           | 200    |
 | [`plumbing`](General-Skills/plumbing/)           | 200    |
