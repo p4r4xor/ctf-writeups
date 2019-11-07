@@ -7,6 +7,7 @@ __Problem__
 __Hint__
 
 > How do operating systems know what kind of file it is? (It's not just the ending!)
+
 > Make sure to submit the flag as picoCTF{XXXXX}
 
 __Solution__
