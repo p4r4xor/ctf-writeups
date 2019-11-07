@@ -10,7 +10,7 @@ What is a hex editor?
 
 __Solution__
 
-Given the hint that we should be using a hex editor, open the image in one :p
+Given the hint that we should be using a hex editor, open the image in one :stuck_out_tongue_closed_eyes:
 I'd recommend `ghex` as it's very user friendly for beginners.
 ```
 $ sudo apt-get install ghex
@@ -18,7 +18,7 @@ $ sudo apt-get install ghex
 ...
 $ ghex garden.jpg
 ```
-and find your flag by scanning the whole hex dump :) or you could use strings to find the flag.
+and find your flag by scanning the whole hex dump :relaxed smirk: or you could use strings to find the flag.
 
 ```
 $ strings garden.jpg
