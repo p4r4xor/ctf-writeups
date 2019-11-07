@@ -1,16 +1,16 @@
 # m00nwalk
 
 
-__PROBLEM__
+__Problem__
 
 Decode this message from the moon. You can also find the file in /problems/m00nwalk_4_bcf65d52e5462dd0b70c0e984d7d5015.
 
-__HINTS__
+__Hints__
 
 * How did pictures from the moon landing get sent back to Earth?
 * What is the CMU mascot?, that might help select a RX option
 
-__SOLUTION__
+__Solution__
 
 Nothing meaningful can be identified listening to the file. Also visualizing the file didn't lead anywhere. The hint suggests that this is related to how images from the moon landing were transmitted back to earth. Some research leads to [SSTV](https://en.wikipedia.org/wiki/Slow-scan_television):
 
@@ -50,5 +50,6 @@ root@kali:/media/sf_CTFs/pico# pactl unload-module 22
 ```
 Thanks [David](https://github.com/Dvd848/)
 
-Flag - `picoCTF{beep_boop_im_in_space}`
+__Flag__ 
+`picoCTF{beep_boop_im_in_space}`
 
