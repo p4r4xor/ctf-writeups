@@ -33,4 +33,5 @@ Well, you can see that the flag is hidden at `b1,rgb,lsb,xy`, which means that i
 There's your flag :)
 
 __Flag__ 
+
 picoCTF{h1d1ng_1n_th3_b1t5}
