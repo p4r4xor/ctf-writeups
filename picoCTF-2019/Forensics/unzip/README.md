@@ -2,7 +2,7 @@
 
 __PROBLEM__
 
-Can you unzip this file and get the flag?
+Can you unzip this [file](flag.zip) and get the flag?
 
 __HINT__
 
