@@ -2,11 +2,11 @@
 
 __Problem__
 
-This [garden](garden.jpg) contains more than it seems. You can also find the file in /problems/glory-of-the-garden_3_346e50df4a37bcc4aa5f6e5831604e2a on the shell server.
+> This [garden](garden.jpg) contains more than it seems. You can also find the file in /problems/glory-of-the-garden_3_346e50df4a37bcc4aa5f6e5831604e2a on the shell server.
 
 __Hint__
 
-What is a hex editor?
+> What is a hex editor?
 
 __Solution__
 
