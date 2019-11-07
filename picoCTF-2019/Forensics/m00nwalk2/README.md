@@ -2,11 +2,11 @@
 
 __Problem__
 
-Revisit the last transmission. We think this transmission contains a hidden message. There are also some clues clue 1, clue 2, clue 3. You can also find the files in /problems/m00nwalk2_0_c513cbf9ae6c76876372b8e29826e77b.
+> Revisit the last transmission. We think this transmission contains a hidden message. There are also some clues clue 1, clue 2, clue 3. You can also find the files in /problems/m00nwalk2_0_c513cbf9ae6c76876372b8e29826e77b.
 
 __Hint__
 
-Use the clues to extract the another flag from the .wav file
+> Use the clues to extract the another flag from the .wav file
 
 __Solution__
 
@@ -32,4 +32,4 @@ picoCTF{the_answer_lies_hidden_in_plain_sight}
 
 __Flag__
 
-picoCTF{the_answer_lies_hidden_in_plain_sight}
+> picoCTF{the_answer_lies_hidden_in_plain_sight}
