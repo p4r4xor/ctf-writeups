@@ -38,6 +38,6 @@ pwntools is a library specially made for CTF purposes. Have fun installing it :p
 If you couldn't, open the file in a text editor and `find and replace` the `\x20` with `1` and `\xe2\x80\x83` with `0`.
 Running the following script gives you the flag :)
 
-__FLAG__
+__Flag__
 
 picoCTF{not_all_spaces_are_created_equal_f006c045f6b402ce4bc749dc7a262380}
