@@ -45,6 +45,6 @@ $ python
 
 ```
 
-__FLAG__
+__Flag__
 
 > picoCTF{BONJOVI}
