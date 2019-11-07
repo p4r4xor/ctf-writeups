@@ -38,4 +38,4 @@ After running the above script, we'll get a PNG file which contains the flag.
 
 __Flag__
 
-picoCTF{l0t5_0f_TAR5}
+> picoCTF{l0t5_0f_TAR5}
