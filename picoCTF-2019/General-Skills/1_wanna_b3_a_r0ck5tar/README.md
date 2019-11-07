@@ -1,14 +1,14 @@
 # 1_wanna_b3_a_r0ck5tar
 
-__PROBLEM__
+__Problem__
 
-I wrote you another [song](lyrics.txt). Put the flag in the picoCTF{} flag format
+> I wrote you another [song](lyrics.txt). Put the flag in the picoCTF{} flag format
 
-__HINT__
+__Hint__
 
-None.
+> None.
 
-__SOLUTION__
+__Solution__
 
 The given text file is written in the esoteric language [rockstar](https://codewithrockstar.com/). You can run it over [here](https://codewithrockstar.com/online). You need to remove the following lines to run it properly. 
 
@@ -45,4 +45,6 @@ $ python
 
 ```
 
-FLAG - `picoCTF{BONJOVI}`
+__FLAG__
+
+> picoCTF{BONJOVI}
