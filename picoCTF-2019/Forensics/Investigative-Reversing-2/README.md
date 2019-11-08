@@ -2,7 +2,7 @@
 
 __Problem__
 
-> We have recovered a binary and an image See what you can make of it. There should be a flag somewhere. Its also found in /problems/investigative-reversing-2_0_f86bb3c9e3e3c1e49a431642c59796e2 on the shell server.
+> We have recovered a [binary](mystery) and an [image](encoded.bmp) See what you can make of it. There should be a flag somewhere. Its also found in /problems/investigative-reversing-2_0_f86bb3c9e3e3c1e49a431642c59796e2 on the shell server.
 
 __Hint__
 
