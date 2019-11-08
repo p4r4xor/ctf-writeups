@@ -143,7 +143,9 @@ E4IQeFnu01YS/z5Y5yU8g6qYzQOJGE73gCT7+l6tREbeT1LV9wak
 ```
 These key files are actually certificactes used to authenticate stuff. Normally Private keys do not go public at all but for the sake of the challenge, we're given one.
 
-As the hint suggests to use wireshark, let's begin.
+> Do the same process as in WebNet0, you'll find your flag.
+
+![Screenshot at 2019-11-09 05-18-21](https://user-images.githubusercontent.com/49688892/68512926-b45abb00-0247-11ea-8ef8-d63a15b20db2.png)
 
 
 
