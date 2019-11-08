@@ -1,6 +1,6 @@
 # picoCTF Writeups
 
-> Participated in [picoCTF 2019](https://picoctf.com/).Was able to solve 94 problems out of 120, which is not that bad :wink:
+> Participated in [picoCTF 2019](https://picoctf.com/).Was able to solve 94 problems out of 109, which is not that bad :wink:
 
 > I'll be uploading __all__ the write-ups for picoCTF. Almost all of them have been given good explanations. 
 
