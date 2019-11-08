@@ -13,7 +13,7 @@ __Hint__
 
 __Solution__
 
-Same process as WebNet0, nothing different.
+> Same process as [WebNet0](https://github.com/p4r4xor/ctf-writeups/tree/master/picoCTF-2019/Forensics/WebNet0), nothing different.
 Please look at this [blog](https://medium.com/@aniketh.red/https-ssl-tls-what-4b8e2704cd78) before jumping into the question to have a better understanding of what happens here. 
 
 Given a key file, let us first decrypt it by using openssl.
