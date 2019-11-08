@@ -143,7 +143,14 @@ These key files are actually certificactes used to authenticate stuff. Normally 
 
 As the hint suggests to use wireshark, let's begin.
 
+Go to `edit` --> `Preferences` --> `Protocols` --> `TLS` --> `RSA Keys list` --> `edit`
 
+![Screenshot at 2019-11-09 04-44-35](https://user-images.githubusercontent.com/49688892/68512409-524d8600-0246-11ea-8737-ab844c3d5bdc.png)
+
+Now, after filling up the details, you'll have access to the http packets. 
+Apply a http stream and you'll find the flag.
+
+![Screenshot at 2019-11-09 04-45-13](https://user-images.githubusercontent.com/49688892/68512654-fe8f6c80-0246-11ea-8303-984d3e6885b2.png)
 
 __Flag__
 
