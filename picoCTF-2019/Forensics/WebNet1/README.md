@@ -2,7 +2,7 @@
 
 __Problem__
 
-> We found this packet capture and key. Recover the flag. You can also find the file in /problems/webnet1_0_d63b267c607b8fedbae100068e010422.
+> We found this packet [capture](capture.pcap) and [key](picopico.key). Recover the flag. You can also find the file in /problems/webnet1_0_d63b267c607b8fedbae100068e010422.
 
 __Hint__
 
