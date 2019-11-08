@@ -15,7 +15,7 @@ __Hint__
 __Solution__
 
 We're down to the main challenges now! Let's do this!
-We're given a binary file and an image, let us first reverse engineer the following code.
+We're given a binary file and an image, let us first reverse the following code using `Ghidra`.
 
 ```C
 int __cdecl main(int argc, const char **argv, const char **envp)
